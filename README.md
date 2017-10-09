@@ -1,4 +1,4 @@
-# Server Side Rendering
+# Server-Side Rendering
 
 This project is an Angular implementation of server-side rendering base on (https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering).
 
@@ -10,6 +10,10 @@ This project is an Angular implementation of server-side rendering base on (http
 ## Development server
 
 * Run `ts-node server.ts` for a dev server. Navigate to `http://localhost:8080/`.
+
+## Dynamic vs Statics Server-side Rendering
+
+* See comments lines in server.ts regarding dynamic or static
 
 ## Build
 
