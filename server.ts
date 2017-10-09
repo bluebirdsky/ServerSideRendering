@@ -25,7 +25,8 @@ app.use(express.static(__dirname + '/dist', { index: false }));
 
 app.get('/*', (req, res) => {
   console.log('GET: ${req.originalUrl}');
-  res.render('./dist/index', {
+  res.render('./dist/index', {            /* dynamic server-side rendering */
+  // res.render('./src/index', {            /* static server-side rendering */
     req: req,
     res: res
   });
