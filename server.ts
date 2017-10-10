@@ -32,5 +32,5 @@ app.get('/*', (req, res) => {
   });
   console.log('GET: ${req.originalUrl}');
 });
-
+console.log('starting on port: ' + process.env.PORT || 8080);
 app.listen(process.env.PORT || 8080, () => {});
