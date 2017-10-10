@@ -12,10 +12,10 @@ export class AppComponent implements OnInit {
   constructor(private metaService: Meta) {}
 
   ngOnInit() {
-    this.metaService.updateTag({
-      property: 'og:url',
-      content: 'https://test.com/'
-    });
+//    this.metaService.updateTag({
+//      property: 'og:url',
+//      content: 'https://test.com/'
+//    });
     this.metaService.updateTag({
       property: 'og:title',
       content: 'title'
