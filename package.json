@@ -10,7 +10,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/cli": "^1.4.5",
     "@angular/compiler-cli": "^4.4.4",
