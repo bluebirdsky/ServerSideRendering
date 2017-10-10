@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
     this.metaService.updateTag({
       property: 'og:image',
-      content: 'ImageURL'
+      content: 'https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg'
     });
   }
 }
