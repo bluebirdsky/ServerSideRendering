@@ -7,28 +7,35 @@ import {Meta} from '@angular/platform-browser';
   styleUrls: ['./page3.component.css']
 })
 export class Page3Component implements OnInit {
-  title = 'page 3';
+  title = 'PRESCRIPTION FOR SUCCESS';
 
   constructor(private metaService: Meta) {}
 
   ngOnInit() {
-//    this.metaService.updateTag({
-//      property: 'og:url',
-//      content: 'https://test.com/'
-//    });
+
+    this.metaService.updateTag({
+      property: 'og:url',
+      content: 'https://angular-universal-demo-test.herokuapp.com/page2/hi'
+    });
+
     this.metaService.updateTag({
       property: 'og:title',
-      content: 'title page 3'
+      content: 'PRESCRIPTION FOR SUCCESS'
+    });
+
+    this.metaService.updateTag({
+      property: 'og:type',
+      content: 'article'
     });
 
     this.metaService.updateTag({
       property: 'og:description',
-      content: 'Description page 3'
+      content: 'The pharmaceutical division of a leading health care provider wanted to roll out a mobile app that was built around positive user experience, performed at lightning speed and had a high degree of reliability.'
     });
 
     this.metaService.updateTag({
       property: 'og:image',
-      content: 'https://pillartechnology.com/dist/assets/work/connected-car-cs.jpg'
+      content: 'https://pillartechnology.com/dist/assets/work/healthcare-thumb-2.jpg'
     });
   }
 }

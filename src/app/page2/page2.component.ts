@@ -7,28 +7,36 @@ import {Meta} from '@angular/platform-browser';
   styleUrls: ['./page2.component.css']
 })
 export class Page2Component implements OnInit {
-  title = 'page 2!';
+  title = 'A CASH CROP YOU CAN BET THE FARM ON';
 
   constructor(private metaService: Meta) {}
 
   ngOnInit() {
-//    this.metaService.updateTag({
-//      property: 'og:url',
-//      content: 'https://test.com/'
-//    });
+    this.metaService.updateTag({
+      property: 'og:url',
+      content: 'https://angular-universal-demo-test.herokuapp.com/page2/'
+    });
+
     this.metaService.updateTag({
       property: 'og:title',
-      content: 'title page 2'
+      content: 'A CASH CROP YOU CAN BET THE FARM ON'
+    });
+
+    this.metaService.updateTag({
+      property: 'og:type',
+      content: 'article'
     });
 
     this.metaService.updateTag({
       property: 'og:description',
-      content: 'Description page 2'
+      content: 'Do you know how many seeds are in that field over there? We do. We even know the precise angle they should be planted in the ground to yield an optimal crop.'
     });
 
     this.metaService.updateTag({
       property: 'og:image',
-      content: 'https://pillartechnology.com/dist/assets/work/connected-car-cs.jpg'
+      content: 'https://pillartechnology.com/dist/assets/work/agriculture-thumb-5.jpg'
     });
   }
 }
+
+
