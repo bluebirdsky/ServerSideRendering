@@ -7,28 +7,33 @@ import {Meta} from '@angular/platform-browser';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'app works!';
+  title = 'WEALTH OF INFORMATION';
 
   constructor(private metaService: Meta) {}
 
   ngOnInit() {
-//    this.metaService.updateTag({
-//      property: 'og:url',
-//      content: 'https://test.com/'
-//    });
+   this.metaService.updateTag({
+     property: 'og:url',
+     content: 'https://angular-universal-demo-test.herokuapp.com/'
+   });
     this.metaService.updateTag({
       property: 'og:title',
-      content: 'title'
+      content: 'WEALTH OF INFORMATION'
+    });
+
+    this.metaService.updateTag({
+      property: 'og:type',
+      content: 'article'
     });
 
     this.metaService.updateTag({
       property: 'og:description',
-      content: 'Description'
+      content: 'Measurement—its the first step that leads to improvement. The world of machines and devices has taken a giant leap thanks to tiny sensors, internet connectivity and massive data storage.'
     });
 
     this.metaService.updateTag({
       property: 'og:image',
-      content: 'https://pillartechnology.com/dist/assets/work/connected-car-cs.jpg'
+      content: 'https://pillartechnology.com/dist/assets/work/data-thumb-image.jpg'
     });
   }
 }
