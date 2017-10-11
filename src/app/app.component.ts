@@ -1,34 +1,22 @@
-import {Component, OnInit} from '@angular/core';
-import {Meta} from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
 export class AppComponent implements OnInit {
-  title = 'app works!';
+  title = 'Test Angular Universal Application';
 
-  constructor(private metaService: Meta) {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
-//    this.metaService.updateTag({
-//      property: 'og:url',
-//      content: 'https://test.com/'
-//    });
-    this.metaService.updateTag({
-      property: 'og:title',
-      content: 'title'
-    });
-
-    this.metaService.updateTag({
-      property: 'og:description',
-      content: 'Description'
-    });
-
-    this.metaService.updateTag({
-      property: 'og:image',
-      content: 'https://pillartechnology.com/dist/assets/work/connected-car-cs.jpg'
+    this.router.events.subscribe((event) => {
+      if (!(event instanceof NavigationEnd)) {
+        return;
+      }
     });
   }
 }
