@@ -11,11 +11,11 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/cli": "^1.4.5",
-    "@angular/compiler-cli": "^4.4.4",
     "@angular/animations": "^4.4.4",
+    "@angular/cli": "^1.4.5",
     "@angular/common": "^4.4.4",
     "@angular/compiler": "^4.4.4",
+    "@angular/compiler-cli": "^4.4.4",
     "@angular/core": "^4.4.4",
     "@angular/forms": "^4.4.4",
     "@angular/http": "^4.4.4",
@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^4.4.4",
     "@angular/platform-server": "^4.4.4",
     "@angular/router": "^4.4.4",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
     "@nguniversal/express-engine": "^1.0.0-beta.3",
     "core-js": "^2.5.1",
     "express": "^4.16.1",
