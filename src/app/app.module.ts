@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
+import { VimeoComponent } from './vimeo/vimeo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     Page2Component,
-    Page3Component
+    Page3Component,
+    VimeoComponent
   ],
   imports: [
     BrowserModule,
